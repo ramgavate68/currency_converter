@@ -21,7 +21,8 @@ const App = () => {
 
   useEffect(() => {
     setCountries(countryList);
-  }, []);
+  }, [countryList]);
+  
 
   useEffect(() => {
     if (amount && selectedCountry) {
